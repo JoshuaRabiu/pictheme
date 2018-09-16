@@ -1,7 +1,7 @@
 # PicTheme
 [Live link to site](https://pictheme.herokuapp.com)
 ![PicTheme Screenshot](https://i.imgur.com/scpk4ze.png)
-This theme applied to VS Code and Sublime
+This theme applied to VS Code and Sublime:
 ![Editor Screenshot](https://i.imgur.com/nEOmIA7.png)
 ## About
 PicTheme uses the color palettes from images to generate color themes for VS Code and Sublime text. 
