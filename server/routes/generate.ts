@@ -18,6 +18,7 @@ const storage = multer.diskStorage({
     cb(null, file.originalname)
   },
 })
+
 const upload = multer({ storage: storage })
 
 const router: any = Router();
@@ -31,7 +32,6 @@ router.get('*', (req, res, next) => {
 router.post('/palette', upload.any(), (req: Request, res: any) => {
   const mainArr: any[] = []
   const arr: string[] = [];
-
 
   (async () => {
     const image = req.files[0].path;
@@ -112,9 +112,5 @@ router.post('/imgurLink', upload.any(), (req: Request, res: Response) => {
     res.send(url)
   })
 })
-
-
-
-
 
 export const GeneratorController = router;
