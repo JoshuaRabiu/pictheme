@@ -4,4 +4,5 @@ CMD yarn
 WORKDIR ./server
 CMD yarn
 EXPOSE 1337
-CMD node ./build/server.js
+WORKDIR /
+CMD ["yarn build", "node ./build/server.js"]
