@@ -1,0 +1,31 @@
+@import '~sanitize.css';
+/* @font-face { font-family: sofia-pro; src: url("https://use.typekit.net/af/b4d13d/00000000000000003b9b1a9a/27/l?subset_id=2&fvd=n5&v=3") format("woff2"), url("https://use.typekit.net/af/b4d13d/00000000000000003b9b1a9a/27/d?subset_id=2&fvd=n5&v=3") format("woff"), url("https://use.typekit.net/af/b4d13d/00000000000000003b9b1a9a/27/a?subset_id=2&fvd=n5&v=3") format("opentype"); font-style: normal; font-weight: 500; } */
+@font-face {
+  font-family: raleway;
+  src: url("https://use.typekit.net/af/73e1a8/00000000000000003b9b13b9/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/73e1a8/00000000000000003b9b13b9/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/73e1a8/00000000000000003b9b13b9/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+}
+body {
+  margin: 0; 
+  padding: 0;
+  font-family: "raleway";
+  /* font-size: 14px; */
+  /* font-size: 1.01vw; */
+  font-size: 14.3px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: subpixel-antialiased;
+
+}
+ul{
+  padding: 0;
+  list-style-type: none;
+}
+ul li{
+  list-style: none;
+  margin-left: 10px;
+}
+ul li:before{
+  content: "- "
+}

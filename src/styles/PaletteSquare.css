@@ -1,0 +1,23 @@
+.square-wrapper{
+  display: flex;
+}
+.color-square{
+  /* width: 70px;
+  height: 70px; */
+  width: 4.375em;
+  height: 4.375em;
+  margin: 3px;
+  float: left; 
+  border-radius: 5px;
+}
+@media only screen and (min-device-width : 900px) and (max-device-width : 1280px)/* iPads and netbooks */ {
+	/* .color-square{
+    width: 50px;
+    height: 50px; 
+  } */
+	}
+.hex{
+  position: relative;
+  top: 3px;
+  display: inline-block;
+}

@@ -1,0 +1,47 @@
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.upload-button{
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.upload-label{
+  display: inline-block;
+  text-align: center;
+  background: linear-gradient(to right, #fc5c7d, #6a82fb);
+  color: #fff;
+  padding: 10px;
+  border-radius: 3.2px;
+  cursor: pointer;
+  -webkit-transition: all 270ms ease;
+  -moz-transition: all 270ms ease;
+  -ms-transition: all 270ms ease;
+  transition: all 270ms ease;
+  width: 300px;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+  .upload-label{
+    width: 70%;
+  }
+}
+.upload-label:hover{
+  transform: scale(1.04)
+}
+.try-it{
+  font-style: italic;
+  color: #bdbcbc;
+  font-size: 24px;
+  padding-right: 8px;
+}
+.description{
+  color: #bdbcbc;
+  font-style: italic;
+  line-height: 24px;
+}

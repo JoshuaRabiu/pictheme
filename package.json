@@ -1,0 +1,48 @@
+{
+  "name": "pictheme",
+  "version": "0.1.0",
+  "private": false,
+  "dependencies": {
+    "@axetroy/react-download": "^1.1.1",
+    "@types/codemirror": "^0.0.58",
+    "@types/react-redux": "^6.0.6",
+    "axios": "^0.18.0",
+    "babel-runtime": "^6.26.0",
+    "codemirror": "^5.39.2",
+    "contrast": "^1.0.1",
+    "enhanced-resolve": "^4.1.0",
+    "js-file-download": "^0.4.1",
+    "pui-react-tooltip": "^8.3.3",
+    "rc-color-picker": "^1.2.6",
+    "rc-tooltip": "^3.7.2",
+    "react": "^16.4.2",
+    "react-codemirror2": "^5.1.0",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts-ts": "2.16.0",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "sanitize.css": "^6.0.0",
+    "sweetalert2": "^7.26.12",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.14.0",
+    "tslint-react": "^3.6.0"
+  },
+  "scripts": {
+    "lint": "tslint --project tsconfig.json",
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "@types/node": "^10.5.6",
+    "@types/react": "^16.4.7",
+    "@types/react-dom": "^16.0.6",
+    "typescript": "^3.0.1"
+  },
+  "proxy": "http://127.0.0.1:1337"
+}

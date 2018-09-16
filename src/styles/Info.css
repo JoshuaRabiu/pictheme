@@ -1,0 +1,25 @@
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.links {
+  color: black;
+  font-style: italic;
+}
+
+.center a{
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+  transition: all 130ms ease;
+}
+a:hover{
+  color: lightgrey;
+}
+.center ul{
+  font-size: 21.45px;
+  line-height: 1.5;
+}

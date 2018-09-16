@@ -1,0 +1,14 @@
+.heading{
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  clear: both;
+  padding: 20px;
+  transition: color 130ms ease-in-out;
+}
+.heading:hover{
+	color: lightgrey;
+}
+.info-link{
+  float: right;
+}
