@@ -18,3 +18,6 @@ Here's an outline on how to make a PicTheme:
 Pull requests are welcome. For feature requests/bug reports, please file an [issue](https://github.com/JoshuaScript/pictheme/issues).
 ## Gallery
 Check out these themes made with PicTheme:
+![Screenshot 1](https://i.imgur.com/LLeS4le.png)
+![Screenshot 2](https://i.imgur.com/oUTegc3.png)
+![Screenshot 3](https://i.imgur.com/rplNImQ.png)
