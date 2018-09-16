@@ -1,6 +1,6 @@
 # PicTheme
 [Live link to site](https://pictheme.herokuapp.com)
-![PicTheme Screenshot](https://i.imgur.com/ZZwBarw.png)
+![PicTheme Screenshot](https://i.imgur.com/scpk4ze.png)
 ## About
 PicTheme uses the color palettes from images to generate color themes for VS Code and Sublime text. 
 It generates two palettes, each generated with a different image library. The first is generated using [splashy](https://github.com/microlinkhq/splashy), and the second with [get-image-colors](https://github.com/colorjs/get-image-colors). It also generates a README file that includes the image the PicTheme is based upon.
