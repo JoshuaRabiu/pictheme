@@ -15,6 +15,6 @@ Here's an outline on how to make a PicTheme:
 4. Click the download buttons for the editor(s) of your choice 
 5. Install and enjoy your PicTheme😎 (in-depth installation instructions are on the site)
 ## Contributing
-Pull requests are welcome. For feature requests/bug reports, please file an [issue](https://github.com/JoshuaScript/pictheme/issues)
+Pull requests are welcome. For feature requests/bug reports, please file an [issue](https://github.com/JoshuaScript/pictheme/issues).
 ## Gallery
 Check out these themes made with PicTheme:
