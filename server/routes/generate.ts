@@ -107,7 +107,7 @@ router.post('/theme/:editor', (req: Request, res: any) => {
 router.post('/imgurLink', upload.any(), (req: Request, res: Response) => {
   console.log(req.files[0].path)
   imgur(fs.readFileSync(req.files[0].path), (err, url) => {
-    if (err) { console.err }
+    if (err) { console.err(err) }
     console.log(`Imgur Url: ${url}`)
     res.send(url)
   })
