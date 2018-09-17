@@ -1,5 +1,5 @@
-import { Response } from "express-serve-static-core";
-import { apiKey } from "../config";
+import { Response } from 'express-serve-static-core';
+import { apiKey } from '../config';
 const express = require('express');
 const { Request, Response, Router } = require('express');
 const multer = require('multer');
