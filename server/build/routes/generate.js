@@ -99,7 +99,7 @@ router.post('/imgurLink', upload.any(), (req, res) => {
     console.log(req.files[0].path);
     imgur(fs.readFileSync(req.files[0].path), (err, url) => {
         if (err) {
-            console.err;
+            console.err(err);
         }
         console.log(`Imgur Url: ${url}`);
         res.send(url);
