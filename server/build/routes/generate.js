@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const config_1 = require("../config");
+const config_1 = require('../config');
 const express = require('express');
 const { Request, Response, Router } = require('express');
 const multer = require('multer');
