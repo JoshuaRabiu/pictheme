@@ -5,12 +5,11 @@ import { toHex } from '../utils/toHex';
 import axios from 'axios';
 import fileDownload from 'js-file-download';
 
-export const reset = () => store.dispatch({ type: 'RESET' })
+export const reset = () => store.dispatch({ type: 'RESET' });
 
-export const toggleCheck = () => store.dispatch({ type: 'TOGGLE_CHECK' })
+export const toggleCheck = () => store.dispatch({ type: 'TOGGLE_CHECK' });
 
-export const setThemeName = (e) => store.dispatch({ type: 'SET_THEME_NAME', payload: e.target.value })
-
+export const setThemeName = (e) => store.dispatch({ type: 'SET_THEME_NAME', payload: e.target.value });
 
 export const processImage = (e: React.ChangeEvent<HTMLInputElement>): void => {
   store.dispatch<any>((dispatch: any): any => {
@@ -39,22 +38,22 @@ export const processImage = (e: React.ChangeEvent<HTMLInputElement>): void => {
   })
 }
 
-export const switchPalette = (indexNo: number): any => store.dispatch({ type: 'SWITCH_PALETTE', payload: indexNo })
+export const switchPalette = (indexNo: number): any => store.dispatch({ type: 'SWITCH_PALETTE', payload: indexNo });
 
 
 export const changeBGColor = (colors: any) => {
-  store.dispatch({ type: 'CHANGE_BG_COLOR', payload: colors.color })
+  store.dispatch({ type: 'CHANGE_BG_COLOR', payload: colors.color });
 }
 
 
 export const randomize = (palette: any) => {
-  store.dispatch({ type: 'RANDOMIZE', payload: randomizeColorMapping(palette) })
+  store.dispatch({ type: 'RANDOMIZE', payload: randomizeColorMapping(palette) });
 }
 
 export const downloadTheme = (themeName, bgColor, editor, imgurLink, isChecked) => {
   const arr: string[] = []
-  const getEl = (selector: string) => document.querySelector(selector)
-  const getColor = (elemArg: any) => toHex(window.getComputedStyle(elemArg).getPropertyValue('color'))
+  const getEl = (selector: string) => document.querySelector(selector);
+  const getColor = (elemArg: any) => toHex(window.getComputedStyle(elemArg).getPropertyValue('color'));
   const indexZero: any = getEl('.CodeMirror-code > div:nth-child(4) > pre:nth-child(2) > span:nth-child(1) > span:nth-child(1)');  // consists of: import * as, from, interface, const
   const indexZeroColor = getColor(indexZero);
   arr.push(indexZeroColor);

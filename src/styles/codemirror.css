@@ -5,11 +5,8 @@
 .CodeMirror {
   /* Set height, width, borders, and global font properties here */
   font-family:Consolas, monaco, "mononoki";
-  /* justify-self: stretch; */
-  /* width: 46.25rem; */
   width: 46.3vw;
 	height: 65.3vh;
-  /* height: 525px; */
 	border-radius: 15px;
   color: black;
   direction: ltr;

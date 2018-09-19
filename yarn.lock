@@ -2,10 +2,6 @@
 # yarn lockfile v1
 
 
-"@axetroy/react-download@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@axetroy/react-download/-/react-download-1.1.1.tgz#7203cbb23a6e9d5f01a9787aae13c2229598c289"
-
 "@babel/code-frame@^7.0.0-beta.35":
   version "7.0.0-beta.56"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0-beta.56.tgz#09f76300673ac085d3b90e02aafa0ffc2c96846a"

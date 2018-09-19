@@ -31,18 +31,18 @@ router.post('/palette', upload.any(), (req, res) => {
     (async () => {
         const image = req.files[0].path;
         const splashyColors = await splashy.fromFile(image);
-        console.log(splashyColors);
+        console.log(`Palette 1: ${splashyColors}`);
         mainArr.push(splashyColors);
         getColors(image, { paletteSize: 7 })
             .then((colors) => {
             for (let i = 0; i < colors.length; i++) {
                 let colorIndex = colors[i];
                 arr.push(colorIndex.hex());
-                console.log(arr);
             }
+            console.log(`Palette 2: ${arr}`);
             mainArr.push(arr);
-            console.log('Main Array:', mainArr);
             res.send(mainArr);
+            console.log(`Main Array`, mainArr);
         });
     })();
 });
@@ -92,7 +92,7 @@ router.post('/theme/:editor', (req, res) => {
             break;
         default:
             console.log('Recieved no editor param');
-            console.error(error);
+            break;
     }
 });
 router.post('/imgurLink', upload.any(), (req, res) => {

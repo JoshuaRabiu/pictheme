@@ -5,10 +5,11 @@
     ],
     "jsRules": {},
     "rules": {
-    	"quotemark": ["true", "single"],
-    	"indent": "false",
-        "no-console": ["false"],
-        "ordered-imports": "false"
+    	"quotemark": [true, "single"],
+    	"indent": false,
+        "no-console": false,
+        "ordered-imports": false,
+        "prefer-for-of": false
     },
     "rulesDirectory": []
 }

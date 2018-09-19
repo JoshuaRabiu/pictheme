@@ -12,46 +12,44 @@ const path = require('path');
 
 const storage = multer.diskStorage({
   inMemory: (req, file, cb) => {
-    cb(null, false)
+    cb(null, false);
   },
   filename: (req, file, cb) => {
-    cb(null, file.originalname)
+    cb(null, file.originalname);
   },
 })
 
-const upload = multer({ storage: storage })
+const upload = multer({ storage: storage });
 
 const router: any = Router();
 
 router.use(zip())
 router.use(express.static(path.resolve('../', 'build')));
 router.get('*', (req, res, next) => {
-  res.sendFile(path.resolve('../', 'build/index.html'))
-})
+  res.sendFile(path.resolve('../', 'build/index.html'));
+});
 
 router.post('/palette', upload.any(), (req: Request, res: any) => {
-  const mainArr: any[] = []
+  const mainArr: any[] = [];
   const arr: string[] = [];
 
   (async () => {
     const image = req.files[0].path;
-    const splashyColors = await splashy.fromFile(image)
-    console.log(splashyColors)
-    mainArr.push(splashyColors)
+    const splashyColors = await splashy.fromFile(image);
+    console.log(`Palette 1: ${splashyColors}`);
+    mainArr.push(splashyColors);
     getColors(image, { paletteSize: 7 })
     .then((colors: string[]) => {
       for (let i = 0; i < colors.length; i++) {
         let colorIndex = colors[i];
-        arr.push(colorIndex.hex())
-        console.log(arr)
+        arr.push(colorIndex.hex());
       }
-      mainArr.push(arr)
-      console.log('Main Array:', mainArr)
-      res.send(mainArr)
+      console.log(`Palette 2: ${arr}`);
+      mainArr.push(arr);
+      res.send(mainArr);
+      console.log(`Main Array`, mainArr);
     })
   })()
-  
-
 })
 
 router.post('/theme/:editor', (req: Request, res: any) => {
@@ -80,7 +78,7 @@ router.post('/theme/:editor', (req: Request, res: any) => {
             type: 'file'
           },
         ],
-      })
+      });
       break;
     case 'Sublime':
       res.zip({
@@ -95,22 +93,22 @@ router.post('/theme/:editor', (req: Request, res: any) => {
             name: `README.md`,
             type: 'file'
           },
-        ]
-      })
+        ];
+      });
       break;
     default:
       console.log('Recieved no editor param')
-      console.error(error)
+      break;
   }
-})
+});
 
 router.post('/imgurLink', upload.any(), (req: Request, res: Response) => {
-  console.log(req.files[0].path)
+  console.log(req.files[0].path);
   imgur(fs.readFileSync(req.files[0].path), (err, url) => {
     if (err) { console.err(err) }
-    console.log(`Imgur Url: ${url}`)
-    res.send(url)
-  })
-})
+    console.log(`Imgur Url: ${url}`);
+    res.send(url);
+  });
+});
 
 export const GeneratorController = router;

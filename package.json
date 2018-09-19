@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": false,
   "dependencies": {
-    "@axetroy/react-download": "^1.1.1",
     "@types/codemirror": "^0.0.58",
     "@types/react-redux": "^6.0.6",
     "axios": "^0.18.0",
