@@ -7,8 +7,8 @@
 .input-title{
 	line-height: normal;
 	white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
 	max-width: 50ch;	
 }
 .input-area{
@@ -109,7 +109,7 @@ input[type="checkbox"]{
 	input[type="text"]{
 		-webkit-appearance: none !important;
 		-webkit-border-radius:0; 
-    border-radius:0;
+    	border-radius:0;
 		background-clip: padding-box;
 		box-shadow: none !important;
 		width: 150px;
