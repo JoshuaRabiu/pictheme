@@ -21,4 +21,4 @@ export const EditorList = ({ themeName, bgColor, imgurLink, isChecked }) => (
       <img onClick={() => downloadTheme(themeName, bgColor, 'VS Code', imgurLink, isChecked )} className="editor-icon" src={vscode} />
     </Tooltip>
   </div>
-)
+);
