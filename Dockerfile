@@ -1,10 +1,10 @@
 FROM node:10.1.0
 COPY . .
-CMD yarn
+RUN yarn
 WORKDIR ./server
-CMD yarn
+RUN yarn
 EXPOSE 1337
 WORKDIR /
-CMD yarn build
+RUN yarn build
 WORKDIR ./server
 CMD node ./build/server.js
