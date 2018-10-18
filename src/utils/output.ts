@@ -1,24 +1,20 @@
 import contrast from 'contrast';
 
 const includeLink = (param1, param2) => {
-  if(param1 === true){
-    return param2
-  }
-  return ''
-
-}
+	if (param1 === true) {
+		return param2;
+	}
+	return '';
+};
 export const makeReadMe = (themeName: any, imgurLink: any, checked: boolean) => {
-  return (
-   `## ${themeName}
+	return `## ${themeName}
 ### Made with PicTheme
 ### Site: https://pictheme.herokuapp.com | Source: https://github.com/JoshuaScript/pictheme
-${includeLink(checked, `### Based on the color palette from this image: ![IMG](${imgurLink})`)}`
-  )
-}
+${includeLink(checked, `### Based on the color palette from this image: ![IMG](${imgurLink})`)}`;
+};
 
 export const themeJSON = (themeName: any, bgColor: any, themeColors: any[]): string => {
-  return (
-    `{
+	return `{
 	"tokenColors": "./${themeName}.tmTheme",
 	"colors": {
 		"editor.background": "${bgColor}",
@@ -29,12 +25,11 @@ export const themeJSON = (themeName: any, bgColor: any, themeColors: any[]): str
 		"editor.selectionBackground": "#30343B"
 	},
 	"name": "${themeName}"
-}`)
-}
+}`;
+};
 
 export const pkgJSON = (themeName: any, bgColor: any): string => {
-  return (
-    `{
+	return `{
    "name": "${themeName}",
    "displayName": "${themeName}",
    "description": "",
@@ -51,11 +46,17 @@ export const pkgJSON = (themeName: any, bgColor: any): string => {
           }
         ]
       }
- }`)
-}
+ }`;
+};
 
-export const makeTheme = (themeName: any, bgColor: any, themeColors: any[], imgurLink?: string, checked?: boolean): string => {
-  return `<?xml version="1.0" encoding="UTF-8"?>
+export const makeTheme = (
+	themeName: any,
+	bgColor: any,
+	themeColors: any[],
+	imgurLink?: string,
+	checked?: boolean
+): string => {
+	return `<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <!-- 
   Made with PicTheme: 
@@ -452,5 +453,5 @@ export const makeTheme = (themeName: any, bgColor: any, themeColors: any[], imgu
 						</dict>
             </array>
           </dict>
-					</plist>`
-}
+					</plist>`;
+};

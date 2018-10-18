@@ -97,7 +97,7 @@ export const downloadTheme = (themeName, bgColor, editor, imgurLink, isChecked) 
 	const metaJSON = pkgJSON(themeName, bgColor);
 	const colorJSON = themeJSON(themeName, bgColor, arr);
 
-	// Checks if the user is downloading a theme for VS Code, which is the only case that 'colorJSON' and 'metaJSON' need to be sent to the server
+	// Checks if the user is downloading a theme for VS Code, which is the only case that requires 'colorJSON' and 'metaJSON' to be sent to the server
 	const shouldISend = (editorParam: string, payload: any) => {
 		if (editorParam === 'VS Code') {
 			return payload;

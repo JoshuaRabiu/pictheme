@@ -2,7 +2,7 @@ import * as React from 'react';
 import {switchPalette} from '../actions/index.action';
 import '../styles/PaletteSwitch.css';
 
-export const PaletteSwitch = ({ index }) => {
+export const PaletteSwitch = ({ index }): JSX.Element => {
   if (index === 0) {
     return <label onClick={() => switchPalette(1)} className="switch">Use Palette 2</label>
   }

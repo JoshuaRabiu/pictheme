@@ -8,11 +8,11 @@ import { Provider } from 'react-redux';
 import { store } from './reducers/index.reducer';
 
 ReactDOM.render(
-  <Provider store={store}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </Provider>,
-  document.getElementById('root') as HTMLElement
+	<Provider store={store}>
+		<BrowserRouter>
+			<App />
+		</BrowserRouter>
+	</Provider>,
+	document.getElementById('root') as HTMLElement
 );
 registerServiceWorker();

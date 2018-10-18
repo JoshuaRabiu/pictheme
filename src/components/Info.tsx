@@ -1,8 +1,7 @@
 import * as React from 'react';
 import '../styles/Info.css';
-// import github from '../images/github.svg';
 
-export const Info = () => (
+export const Info: React.StatelessComponent = (): JSX.Element => (
   <div className="center">
     <h2 className="links">By: <a href="https://github.com/JoshuaScript">JoshuaScript</a> | <a className="source" href="https://www.github.com/JoshuaScript/PicTheme">Source Code Here</a></h2>
     <h2 className="links">Bugs? Feature Requests? Please file an issue on <a href="https://github.com/JoshuaScript/PicTheme/issues">GitHub</a></h2>

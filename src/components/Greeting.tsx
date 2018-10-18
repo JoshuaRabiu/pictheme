@@ -5,7 +5,7 @@ import '../styles/Greeting.css';
 
 const mobile: any = ['Android','webOS', 'iPhone', 'iPad', 'iPod','BlackBerry']
 
-export const Greeting = () => {
+export const Greeting: React.StatelessComponent = (): JSX.Element => {
 
   if(mobile.includes(navigator.platform)){
     swal('Notice:', 'PicTheme is best experienced on Desktop') 
