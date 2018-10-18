@@ -21,7 +21,6 @@
     "react-router-dom": "^4.3.1",
     "react-scripts-ts": "2.16.0",
     "redux": "^4.0.0",
-    "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "sanitize.css": "^6.0.0",
     "sweetalert2": "^7.26.12",

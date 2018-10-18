@@ -9,7 +9,6 @@ import { bgColorReducer } from './bgColor.reducer';
 import { editorStyleReducer } from './editorStyle.reducer';
 import { colorValueReducer } from './colorValue.reducer';
 import { themeNameReducer } from './themeName.reducer';
-// import logger from 'redux-logger'
 import { isCheckedReducer } from './isChecked.reducer';
 import { imgurLinkReducer } from './imgurLink.reducer';
 
@@ -25,9 +24,7 @@ export const rootReducer = combineReducers({
   themeName: themeNameReducer,
   isChecked: isCheckedReducer,
   imgurLink: imgurLinkReducer
-})
+});
 
-const middleware = applyMiddleware(thunk /*logger*/)
-export const store = createStore(rootReducer, middleware)
-
-store.subscribe(() => console.log(store.getState()))
+const middleware = applyMiddleware(thunk);
+export const store = createStore(rootReducer, middleware);
