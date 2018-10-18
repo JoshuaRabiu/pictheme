@@ -36,7 +36,6 @@ router.post('/palette', upload.any(), (req: Request, res: any) => {
   (async () => {
     const image = req.files[0].path;
     const splashyColors = await splashy.fromFile(image);
-    console.log(`Palette 1: ${splashyColors}`);
     mainArr.push(splashyColors);
     getColors(image, { paletteSize: 7 })
     .then((colors: string[]) => {
@@ -44,10 +43,8 @@ router.post('/palette', upload.any(), (req: Request, res: any) => {
         let colorIndex = colors[i];
         arr.push(colorIndex.hex());
       }
-      console.log(`Palette 2: ${arr}`);
       mainArr.push(arr);
       res.send(mainArr);
-      console.log(`Main Array`, mainArr);
     })
   })()
 })
@@ -93,7 +90,7 @@ router.post('/theme/:editor', (req: Request, res: any) => {
             name: `README.md`,
             type: 'file'
           },
-        ];
+        ]
       });
       break;
     default:
@@ -103,10 +100,8 @@ router.post('/theme/:editor', (req: Request, res: any) => {
 });
 
 router.post('/imgurLink', upload.any(), (req: Request, res: Response) => {
-  console.log(req.files[0].path);
   imgur(fs.readFileSync(req.files[0].path), (err, url) => {
-    if (err) { console.err(err) }
-    console.log(`Imgur Url: ${url}`);
+    if (err) { console.error(err) }
     res.send(url);
   });
 });

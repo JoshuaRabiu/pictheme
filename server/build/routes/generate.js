@@ -31,7 +31,6 @@ router.post('/palette', upload.any(), (req, res) => {
     (async () => {
         const image = req.files[0].path;
         const splashyColors = await splashy.fromFile(image);
-        console.log(`Palette 1: ${splashyColors}`);
         mainArr.push(splashyColors);
         getColors(image, { paletteSize: 7 })
             .then((colors) => {
@@ -39,10 +38,8 @@ router.post('/palette', upload.any(), (req, res) => {
                 let colorIndex = colors[i];
                 arr.push(colorIndex.hex());
             }
-            console.log(`Palette 2: ${arr}`);
             mainArr.push(arr);
             res.send(mainArr);
-            console.log(`Main Array`, mainArr);
         });
     })();
 });
@@ -96,12 +93,10 @@ router.post('/theme/:editor', (req, res) => {
     }
 });
 router.post('/imgurLink', upload.any(), (req, res) => {
-    console.log(req.files[0].path);
     imgur(fs.readFileSync(req.files[0].path), (err, url) => {
         if (err) {
-            console.err(err);
+            console.error(err);
         }
-        console.log(`Imgur Url: ${url}`);
         res.send(url);
     });
 });
