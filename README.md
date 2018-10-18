@@ -1,5 +1,6 @@
 # PicTheme
 
+[![Build Status](https://travis-ci.com/JoshuaScript/pictheme.svg?branch=master)](https://travis-ci.com/JoshuaScript/pictheme)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d612cdcacdff46ce9f066235f9f04647)](https://app.codacy.com/app/JoshuaScript/pictheme?utm_source=github.com&utm_medium=referral&utm_content=JoshuaScript/pictheme&utm_campaign=Badge_Grade_Dashboard)
 
 [Live link to site](https://pictheme.herokuapp.com)
