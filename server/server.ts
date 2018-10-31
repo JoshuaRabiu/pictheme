@@ -14,5 +14,5 @@ app.use('/', GeneratorController);
 app.use('/generate', GeneratorController);
 
 app.listen(port, () => {
-	console.log(`App listening on port ${port}`);
+  console.log(`App listening on port ${port}`);
 });
