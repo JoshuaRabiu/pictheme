@@ -1,41 +1,41 @@
 .editor-list{
-	float: left;
+  float: left;
 }
 .editor-icon{
-	width: 35px;
-	height: 35px;
-	transition: all 190ms ease;
-	cursor: pointer;
-	float: right;
-	margin: 4px;	
+  width: 35px;
+  height: 35px;
+  transition: all 190ms ease;
+  cursor: pointer;
+  float: right;
+  margin: 4px;	
 }
 .editor-icon:hover{
-	transform: scale(1.1)
+  transform: scale(1.1)
 }
 .waiting{
-	opacity: 0.5;
+  opacity: 0.5;
 }
 .accordion {
   position: relative;
-	width: 100%;
-	text-align: left;
+  width: 100%;
+  text-align: left;
 }
 .accordion .item input[type=checkbox] {
-	visibility: hidden;
+  visibility: hidden;
 }
 .accordion .item input[type=checkbox]:checked ~ ol {
   max-height: 0;
   opacity: 0;
 }
 .first{
-	color: #000;
-	border-bottom: 2px solid #000;
-	cursor: pointer;
-	webkit-transition: all 170ms ease;
+  color: #000;
+  border-bottom: 2px solid #000;
+  cursor: pointer;
+  webkit-transition: all 170ms ease;
   -moz-transition: all 170ms ease;
   -ms-transition: all 170ms ease;
   transition: all 170ms ease;
 }
 .first:hover{
-	color: #95958a;
+  color: #95958a;
 }

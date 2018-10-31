@@ -3,8 +3,8 @@ import { getRandomInt } from './getRandomInt';
 
 export const randomizeColorMapping = (palette: string[]) => {
   return `.cm-s-custom.CodeMirror { color: ${palette[getRandomInt(0, palette.length - 1)]}; }
-	.cm-s-custom div.CodeMirror-selected {  ${palette[getRandomInt(0, palette.length - 1)]}; }
-	.cm-s-custom .CodeMirror-line::selection, .cm-s-custom .CodeMirror-line > span::selection, .cm-s-custom .CodeMirror-line > span > span::selection { background:  ${palette[getRandomInt(0, palette.length - 1)]}; }
+  .cm-s-custom div.CodeMirror-selected {  ${palette[getRandomInt(0, palette.length - 1)]}; }
+  .cm-s-custom .CodeMirror-line::selection, .cm-s-custom .CodeMirror-line > span::selection, .cm-s-custom .CodeMirror-line > span > span::selection { background:  ${palette[getRandomInt(0, palette.length - 1)]}; }
 .cm-s-custom .CodeMirror-line::-moz-selection, .cm-s-custom .CodeMirror-line > span::-moz-selection, .cm-s-custom .CodeMirror-line > span > span::-moz-selection { background:  ${palette[getRandomInt(0, palette.length - 1)]}; }
 .cm-s-custom .CodeMirror-gutters { background: #272822; border-right: 0px; }
 .cm-s-custom .CodeMirror-guttermarker { color: white; }
@@ -44,8 +44,8 @@ export const randomizeColorMapping = (palette: string[]) => {
 
 export const defaultStyle = (palette: string[]) => {
   return `.cm-s-custom.CodeMirror { color: ${palette[0]}; }
-	.cm-s-custom div.CodeMirror-selected { background: #49483E; }
-	.cm-s-custom .CodeMirror-line::selection, .cm-s-custom .CodeMirror-line > span::selection, .cm-s-custom .CodeMirror-line > span > span::selection { background: rgba(73, 72, 62, .99); }
+  .cm-s-custom div.CodeMirror-selected { background: #49483E; }
+  .cm-s-custom .CodeMirror-line::selection, .cm-s-custom .CodeMirror-line > span::selection, .cm-s-custom .CodeMirror-line > span > span::selection { background: rgba(73, 72, 62, .99); }
 .cm-s-custom .CodeMirror-line::-moz-selection, .cm-s-custom .CodeMirror-line > span::-moz-selection, .cm-s-custom .CodeMirror-line > span > span::-moz-selection { background: rgba(73, 72, 62, .99); }
 .cm-s-custom .CodeMirror-gutters { background: #272822; border-right: 0px; }
 .cm-s-custom .CodeMirror-guttermarker { color: white; }

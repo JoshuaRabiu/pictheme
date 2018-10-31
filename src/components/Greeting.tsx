@@ -12,7 +12,7 @@ export const Greeting: React.StatelessComponent = (): JSX.Element => {
   }
   
   return (<div className="wrapper">
-		<h2>Turn your images into Code Editor Themes.</h2>
+    <h2>Turn your images into Code Editor Themes.</h2>
     <h3 className="description">PicTheme uses the color palette from images to generate code editor themes on the fly.</h3>
     <h4 className="description">Generates themes for Visual Studio Code and Sublime Text. Works with .gif, .png, .jpg, and .tiff images
     </h4>

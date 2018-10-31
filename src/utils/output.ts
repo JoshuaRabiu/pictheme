@@ -1,35 +1,35 @@
 import contrast from 'contrast';
 
 const includeLink = (param1, param2) => {
-	if (param1 === true) {
-		return param2;
-	}
-	return '';
+  if (param1 === true) {
+    return param2;
+  }
+  return '';
 };
 export const makeReadMe = (themeName: any, imgurLink: any, checked: boolean) => {
-	return `## ${themeName}
+  return `## ${themeName}
 ### Made with PicTheme
 ### Site: https://pictheme.herokuapp.com | Source: https://github.com/JoshuaScript/pictheme
 ${includeLink(checked, `### Based on the color palette from this image: ![IMG](${imgurLink})`)}`;
 };
 
 export const themeJSON = (themeName: any, bgColor: any, themeColors: any[]): string => {
-	return `{
-	"tokenColors": "./${themeName}.tmTheme",
-	"colors": {
-		"editor.background": "${bgColor}",
-		"editorCursor.foreground": "#cccccc",
-		"editor.foreground": "${themeColors[3]}",
-		"editorWhitespace.foreground": "#373B41",
-		"editor.lineHighlightBackground": "#30343B",
-		"editor.selectionBackground": "#30343B"
-	},
-	"name": "${themeName}"
+  return `{
+  "tokenColors": "./${themeName}.tmTheme",
+  "colors": {
+    "editor.background": "${bgColor}",
+    "editorCursor.foreground": "#cccccc",
+    "editor.foreground": "${themeColors[3]}",
+    "editorWhitespace.foreground": "#373B41",
+    "editor.lineHighlightBackground": "#30343B",
+    "editor.selectionBackground": "#30343B"
+  },
+  "name": "${themeName}"
 }`;
 };
 
 export const pkgJSON = (themeName: any, bgColor: any): string => {
-	return `{
+  return `{
    "name": "${themeName}",
    "displayName": "${themeName}",
    "description": "",
@@ -50,13 +50,13 @@ export const pkgJSON = (themeName: any, bgColor: any): string => {
 };
 
 export const makeTheme = (
-	themeName: any,
-	bgColor: any,
-	themeColors: any[],
-	imgurLink?: string,
-	checked?: boolean
+  themeName: any,
+  bgColor: any,
+  themeColors: any[],
+  imgurLink?: string,
+  checked?: boolean
 ): string => {
-	return `<?xml version="1.0" encoding="UTF-8"?>
+  return `<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <!-- 
   Made with PicTheme: 
@@ -67,11 +67,11 @@ export const makeTheme = (
 <plist version="1.0">
   <dict>
     <key>author</key>
-	  <string>PicTheme</string>
-	  <key>colorSpaceName</key>
-	  <string>sRGB</string>
-	  <key>semanticClass</key>
-	  <string>theme.${contrast(bgColor)}.${themeName.replace(/[ \u00A0]/g, '_')}</string>
+    <string>PicTheme</string>
+    <key>colorSpaceName</key>
+    <string>sRGB</string>
+    <key>semanticClass</key>
+    <string>theme.${contrast(bgColor)}.${themeName.replace(/[ \u00A0]/g, '_')}</string>
     <key>name</key>
     <string>${themeName}</string>
     <key>settings</key>
@@ -450,8 +450,8 @@ export const makeTheme = (
                 <key>foreground</key>
                 <string>${themeColors[5]}</string>
               </dict>
-						</dict>
+            </dict>
             </array>
           </dict>
-					</plist>`;
+          </plist>`;
 };

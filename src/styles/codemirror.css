@@ -6,17 +6,17 @@
   /* Set height, width, borders, and global font properties here */
   font-family:Consolas, monaco, "mononoki";
   width: 46.3vw;
-	height: 65.3vh;
-	border-radius: 15px;
+  height: 65.3vh;
+  border-radius: 15px;
   color: black;
   direction: ltr;
   z-index: 0;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-	.CodeMirror{
+  .CodeMirror{
     width: 99vw;
   }
-	}
+  }
 
 /* PADDING */
 

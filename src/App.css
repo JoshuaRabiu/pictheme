@@ -7,7 +7,7 @@
   transition: color 130ms ease-in-out;
 }
 .heading:hover{
-	color: lightgrey;
+  color: lightgrey;
 }
 .info-link{
   float: right;
