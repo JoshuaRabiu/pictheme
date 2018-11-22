@@ -1,4 +1,7 @@
 import * as React from 'react';
+const ColorPicker = require('rc-color-picker');
+import Tooltip from 'rc-tooltip';
+import 'rc-tooltip/assets/bootstrap_white.css';
 import { PaletteSwitch } from './PaletteSwitch';
 import { EditorList } from './EditorList';
 import { editorText } from '../utils/editorText';
@@ -12,13 +15,8 @@ import '../styles/mononoki.css';
 import 'codemirror/mode/jsx/jsx.js';
 import 'rc-color-picker/assets/index.css';
 import { UnControlled as CodeMirror } from 'react-codemirror2';
-
 import '../styles/ThemeCustomizer.css';
 import { PaletteSquare } from './PaletteSquare';
-const ColorPicker = require('rc-color-picker');
-import Tooltip from 'rc-tooltip';
-import 'rc-tooltip/assets/bootstrap_white.css';
-
 
 export const ThemeCustomizer = ({ palette, link, imgName, index, themeName, bgColor, editorStyle, isChecked, imgurLink }: any) => {
 
