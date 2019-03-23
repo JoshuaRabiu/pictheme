@@ -19,8 +19,7 @@ export const processImage = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const imgURL = window.URL.createObjectURL(image);
     dispatch({ type: 'SEND_URL', payload: imgURL });
 
-    const imgName = e.target.files[0].name;
-    dispatch({ type: 'SEND_IMAGE_NAME', payload: imgName });
+    dispatch({ type: 'SEND_IMAGE_NAME', payload: image.name });
 
     // Sends color palette and sets editor theme based on that palette
     const formData = new FormData();
