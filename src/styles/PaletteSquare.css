@@ -1,14 +1,16 @@
-.square-wrapper{
+.square-wrapper {
   display: flex;
 }
-.color-square{
+
+.color-square {
   width: 4.375em;
   height: 4.375em;
   margin: 3px;
-  float: left; 
+  float: left;
   border-radius: 5px;
 }
-.hex{
+
+.hex {
   position: relative;
   top: 3px;
   display: inline-block;

@@ -5,6 +5,7 @@
   transform: translate(-50%, -50%);
   width: 100px;
 }
+
 .loader:before {
   content: '';
   display: block;
@@ -36,6 +37,7 @@
     transform: rotate(360deg);
   }
 }
+
 @keyframes dash {
   0% {
     stroke-dasharray: 1, 200;
@@ -50,9 +52,9 @@
     stroke-dashoffset: -124px;
   }
 }
+
 @keyframes color {
-  100%,
-  0% {
+  100%, 0% {
     stroke: slategray;
   }
 }

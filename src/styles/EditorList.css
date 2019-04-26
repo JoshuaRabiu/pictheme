@@ -1,7 +1,7 @@
-.editor-list{
+.editor-list {
   float: left;
 }
-.editor-icon{
+.editor-icon {
   width: 35px;
   height: 35px;
   transition: all 190ms ease;
@@ -9,10 +9,10 @@
   float: right;
   margin: 4px;	
 }
-.editor-icon:hover{
+.editor-icon:hover {
   transform: scale(1.1)
 }
-.waiting{
+.waiting {
   opacity: 0.5;
 }
 .accordion {
@@ -27,7 +27,7 @@
   max-height: 0;
   opacity: 0;
 }
-.first{
+.first {
   color: #000;
   border-bottom: 2px solid #000;
   cursor: pointer;
@@ -36,6 +36,6 @@
   -ms-transition: all 170ms ease;
   transition: all 170ms ease;
 }
-.first:hover{
+.first:hover {
   color: #95958a;
 }

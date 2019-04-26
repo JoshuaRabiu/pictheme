@@ -1,18 +1,20 @@
-.wrapper{
+.wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
-.upload-button{
+
+.upload-button {
   width: 0.1px;
   height: 0.1px;
   opacity: 0;
   overflow: hidden;
   position: absolute;
 }
-.upload-label{
+
+.upload-label {
   display: inline-block;
   text-align: center;
   background: linear-gradient(to right, #fc5c7d, #6a82fb);
@@ -26,21 +28,25 @@
   transition: all 270ms ease;
   width: 300px;
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
-  .upload-label{
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .upload-label {
     width: 70%;
   }
 }
-.upload-label:hover{
+
+.upload-label:hover {
   transform: scale(1.04)
 }
-.try-it{
+
+.try-it {
   font-style: italic;
   color: #bdbcbc;
   font-size: 24px;
   padding-right: 8px;
 }
-.description{
+
+.description {
   color: #bdbcbc;
   font-style: italic;
   line-height: 24px;

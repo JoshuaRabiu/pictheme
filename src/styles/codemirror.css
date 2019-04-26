@@ -1,5 +1,5 @@
 /* BASICS */
-@-ms-viewport{
+@-ms-viewport {
   width: device-width;
 }
 .CodeMirror {
@@ -15,7 +15,7 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .CodeMirror{
     width: 99vw;
-  }
+   }
   }
 
 /* PADDING */
@@ -38,7 +38,6 @@
   background-color: #f7f7f7;
   white-space: nowrap;
 }
-.CodeMirror-linenumbers {}
 .CodeMirror-linenumber {
   padding: 0 3px 0 5px;
   min-width: 20px;
@@ -98,9 +97,6 @@
   50% { background-color: transparent; }
   100% {}
 }
-
-/* Can style cursor different in overwrite (non-insert) mode */
-.CodeMirror-overwrite .CodeMirror-cursor {}
 
 .cm-tab { display: inline-block; text-decoration: inherit; }
 
@@ -282,8 +278,6 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #a22;}
   z-index: 2;
   padding: 0.1px; /* Force widget margins to stay inside of the container */
 }
-
-.CodeMirror-widget {}
 
 .CodeMirror-rtl pre { direction: rtl; }
 
