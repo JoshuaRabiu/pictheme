@@ -40,7 +40,7 @@
     "@types/react": "^16.4.7",
     "@types/react-dom": "^16.0.6",
     "chai": "^4.2.0",
-    "puppeteer": "^1.9.0",
+    "puppeteer": "^1.13.0",
     "typescript": "^3.0.1"
   },
   "proxy": "http://127.0.0.1:1337"
