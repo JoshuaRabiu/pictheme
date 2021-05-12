@@ -7,7 +7,7 @@
     "@types/react-redux": "^6.0.6",
     "axios": "^0.18.0",
     "babel-runtime": "^6.26.0",
-    "codemirror": "^5.39.2",
+    "codemirror": "^5.58.2",
     "contrast": "^1.0.1",
     "enhanced-resolve": "^4.1.0",
     "js-file-download": "^0.4.1",
