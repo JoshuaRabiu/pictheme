@@ -3,7 +3,7 @@ import contrast from 'contrast';
 export const makeReadMe = (themeName: any, imgurLink: any, checked: boolean) => {
 	return `## ${themeName}
 ### Made with PicTheme
-### Site: https://pictheme.herokuapp.com | Source: https://github.com/JoshuaScript/pictheme
+### Site: https://pictheme.herokuapp.com | Source: https://github.com/joshrabiu/pictheme
 ${checked ? `### Based on the color palette from this image: ![IMG](${imgurLink})` : ''}`;
 };
 
@@ -55,7 +55,7 @@ export const makeTheme = (
   <!-- 
     Made with PicTheme: 
       Site: http://pictheme.herokuapp.com/
-      Source Code: https://github.com/JoshuaScript/PicTheme
+      Source Code: https://github.com/joshrabiu/PicTheme
       ${checked ? `### Based on the color palette from this image: ![IMG](${imgurLink})` : ''}
   -->
   <plist version="1.0">
