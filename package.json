@@ -5,7 +5,7 @@
   "dependencies": {
     "@types/codemirror": "^0.0.58",
     "@types/react-redux": "^6.0.6",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-runtime": "^6.26.0",
     "codemirror": "^5.39.2",
     "contrast": "^1.0.1",
