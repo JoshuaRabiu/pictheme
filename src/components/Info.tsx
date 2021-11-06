@@ -3,8 +3,8 @@ import '../styles/Info.css';
 
 export const Info: React.StatelessComponent = (): JSX.Element => (
   <div className="center">
-    <h2 className="links">By: <a href="https://github.com/joshrabiu">joshrabiu</a> | <a className="source" href="https://www.github.com/joshrabiu/PicTheme">Source Code Here</a></h2>
-    <h2 className="links">Bugs? Feature Requests? Please file an issue on <a href="https://github.com/joshrabiu/PicTheme/issues">GitHub</a></h2>
+    <h2 className="links">By: <a href="https://github.com/JoshuaRabiu">JoshuaRabiu</a> | <a className="source" href="https://www.github.com/JoshuaRabiu/PicTheme">Source Code Here</a></h2>
+    <h2 className="links">Bugs? Feature Requests? Please file an issue on <a href="https://github.com/JoshuaRabiu/PicTheme/issues">GitHub</a></h2>
     <ul>
       Attribuions:
       <br />

@@ -1,7 +1,7 @@
 # PicTheme
 
-[![Build Status](https://travis-ci.com/joshrabiu/pictheme.svg?branch=master)](https://travis-ci.com/joshrabiu/pictheme)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d612cdcacdff46ce9f066235f9f04647)](https://app.codacy.com/app/joshrabiu/pictheme?utm_source=github.com&utm_medium=referral&utm_content=joshrabiu/pictheme&utm_campaign=Badge_Grade_Dashboard)
+[![Build Status](https://travis-ci.com/JoshuaRabiu/pictheme.svg?branch=master)](https://travis-ci.com/JoshuaRabiu/pictheme)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d612cdcacdff46ce9f066235f9f04647)](https://app.codacy.com/app/JoshuaRabiu/pictheme?utm_source=github.com&utm_medium=referral&utm_content=JoshuaRabiu/pictheme&utm_campaign=Badge_Grade_Dashboard)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 [Live link to site](https://pictheme.herokuapp.com)
@@ -19,7 +19,7 @@ Here's an outline on how to make a PicTheme:
 4. Click the download buttons for the editor(s) of your choice 
 5. Install and enjoy your PicTheme😎 (in-depth installation instructions are on the site)
 ## Contributing
-Pull requests are welcome. For feature requests/bug reports, please file an [issue](https://github.com/joshrabiu/pictheme/issues).
+Pull requests are welcome. For feature requests/bug reports, please file an [issue](https://github.com/JoshuaRabiu/pictheme/issues).
 ## Gallery
 Check out these themes made with PicTheme:
 ![Screenshot 1](https://i.imgur.com/LLeS4le.png)
